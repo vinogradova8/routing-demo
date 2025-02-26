@@ -9,8 +9,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang='en'>
+      <body>
+        <header style={{ background: 'lightblue', padding: '1em' }}>
+          <p>Header</p>
+        </header>
+        {children}
+        <footer style={{ background: 'ghostwhite', padding: '1em' }}>
+          <p>Footer</p>
+        </footer>
+      </body>
     </html>
-  )
+  );
 }
